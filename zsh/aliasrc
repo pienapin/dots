@@ -1,0 +1,19 @@
+# addalias function
+addalias () {
+	echo "alias '$1'='$2'" >> /home/pien/.config/zsh/aliasrc
+}
+
+
+alias 'v'='nvim'
+alias 'doas'='doas '
+#alias 'lf'='/home/pien/.config/lf/lf-ueberzug'
+alias 'l'='exa'
+alias 'la'='exa -a'
+alias 'dv'='doas nvim'
+alias 'c'='z'
+alias 'ls'='echo -e "BRO, STOP USING LS, YOU MADE AN ALIAS TO USE EXA. WHY YOU KEEP USING LS. YOU STUPID PRICK."'
+# alias 'cd'='echo "cd? CD? WHAT DO YOU MEAN CD? YOU MEANT c THE ZEOXIDE ALIAS RIGHT? THEN WHY IN THE WORLD YOU STILL USE CD?! YOU STUPID FORGETFUL PRICK. NOW YOU WONT GO ANYWHERE, EVEN TO"'
+alias 'duck'='yazi'
+alias 'll'='eza -l'
+alias 'lla'='eza -la'
+alias 'testcolor'='curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/e50a28ec54188d2413518788de6c6367ffcea4f7/print256colours.sh | bash'

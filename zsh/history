@@ -1,0 +1,1052 @@
+awk -F"[][]" '/front-left:/ { print $2 }' <(pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo)
+awk -F '/front-left:/ { print $2 }' <(pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo)
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | tr -d "%"
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | grep "Volume: front-left: 34915 /  [0-9]+% / -16\.41 dB,   front-right: 34915 /  53% / -16\.41 dB         balance 0\.00"
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | grep -Po "Volume: front-left: 34915 /  [0-9]+% / -16\.41 dB,   front-right: 34915 /  53% / -16\.41 dB         balance 0\.00"
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[/] '{ print $2 }
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[/] '{ print $2 } | echo
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[/] '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[=/] '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[/.] '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[/,] '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[53] '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[ / ] '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F[\ /\ ] '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F \ /\  '{ print $2 }'
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F \ /\  '{ print $2 }' | tr -d \"%|"
+pactl get-sink-volume alsa_output.usb-Synaptics_CX31993_384Khz_HIFI_AUDIO-00.analog-stereo | awk -F \ /\  '{ print $2 }' | tr -d \"%\"
+pactl get-default-sink
+pactl get-sink-volume $(pactl get-default-sink) | awk -F \ /\  '{ print $2 }' | tr -d \"%\"
+eww loggs
+eww logs
+eww logs
+eww logs
+eww logs
+eww logs
+v .config/sxhkd/sxhkdrc
+bspc query -D -d next.occupied
+bspc query -D -d next.occupied
+bspc query -D -d next.occupied --names
+bspc query -D -d next --names
+test
+test "$(bspc query -D -d local.next --names)" = "$(bspc query -D -d local.next.occupied --names)"
+test "$(bspc query -D -d local.next --names)" = "$(bspc query -D -d next.local.occupied --names)"
+test "$(bspc query -D -d next.local --names)" = "$(bspc query -D -d next.local.occupied --names)"
+test "$(bspc query -D -d next.local --names)" = "$(bspc query -D -d next.local.occupied --names)"
+bspc query -D -d next.local --names
+bspc query -D -d next.local.occupied --names
+echo $(test "$(bspc query -D -d next.local --names)" = "$(bspc query -D -d next.local.occupied --names)")
+test $(bspc query -D -d next.local --names) = $(bspc query -D -d next.local.occupied --names)
+bspc query -D --names
+bspc query -D --names -d focused
+bspc query -D --names -d next
+bspc query -D --names -d next.local
+v .config/sxhkd/sxhkdrc
+v .config/sxhkd/sxhkdrc
+bspc config top_padding 0
+nm-applet
+bspc query -M --names
+bspc query -M --names -m focused
+paru nm-applet
+paru -S network-manager-applet
+nm-applet
+paru -Rns network-manager-applet
+paru -S nm-connection-editor
+v .config/sxhkd/sxhkdrc
+c rofi
+l
+c ..
+l
+c .config/rofi
+l
+ci
+l
+v applets
+v launchers/type-6/launcher.sh
+c -
+c config
+l
+git clone https://github.com/P3rf/rofi-network-manager?tab=readme-ov-file
+git clone https://github.com/P3rf/rofi-network-manager
+cd rofi-network-manager
+l
+c rofi-network-manager
+l
+v rofi-network-manager.conf
+l
+chmod +x rofi-network-manager.sh
+./rofi-network-manager.sh
+./rofi-network-manager.sh
+v rofi-network-manager.conf
+./rofi-network-manager.sh
+v rofi-network-manager.conf
+./rofi-network-manager.sh
+./rofi-network-manager.sh
+./rofi-network-manager.sh
+v rofi-network-manager.rasi
+v rofi-network-manager.sh
+./rofi-network-manager.sh
+./rofi-network-manager.sh
+./rofi-network-manager.sh
+./rofi-network-manager.sh
+./rofi-network-manager.sh
+./rofi-network-manager.sh
+v rofi-network-manager.conf
+./rofi-network-manager.sh
+v rofi-network-manager.conf
+./rofi-network-manager.sh
+v rofi-network-manager.conf
+./rofi-network-manager.sh
+v rofi-network-manager.conf
+./rofi-network-manager.sh
+v rofi-network-manager.conf
+./rofi-network-manager.sh
+v rofi-network-manager.rasi
+v rofi-network-manager.sh
+v rofi-network-manager.rasi
+v rofi-network-manager.rasi
+v rofi-network-manager.conf
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+v rofi/files/launchers/type-6/style-7.rasi
+.config/rofi-network-manager/rofi-network-manager.sh
+v rofi/files/launchers/type-6/style-7.rasi
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+.config/rofi-network-manager/rofi-network-manager.sh
+c eww
+chmod +x bar/launch_bar
+bar/launch_bar
+v bar/launch_bar
+bar/launch_bar
+pkill eww
+bar/launch_bar
+v bar/eww.yuck
+eww logs
+eww active-windows
+pkill eww
+eww active-windows
+eww &
+eww active-windows
+eww list-windows
+eww --debug
+eww daemon
+eww list-windows
+eww open bar
+eww close bar
+eww open bar
+v eww.scss
+eww close bar
+v eww.scss
+eww open bar
+eww close bar
+chmod +x scripts/*
+pkill eww
+l
+v eww.yuck
+eww --help
+eww open bar --debug
+eww close bar
+eww open bar --logs
+eww close bar
+eww open bar --logs
+pkill eww
+c downloads
+git clone https://github.com/PoSayDone/.dotfiles_new
+mv .dotfiles_new posaydone-dots
+c posaydone-dots
+l
+rm -rf ~/.config/eww/*
+cp -r files/eww/* ~/.config/eww
+eww daemon
+eww list-windows
+c ..
+rm -rf ~/.config/eww/*
+git clone https://github.com/VladimirPapazov88/Everforest-Hyprland
+cp -r Everforest-Hyprland/eww/* ../.config/eww
+c eww
+l
+eww list-windows
+eww open bar
+v bar.yuck
+v eww.scss
+v eww.scss
+v bar.scss
+v bar.yuck
+c scripts
+l
+chmod +x *
+l
+c ..
+c -
+c -
+l
+v bar.yuck
+v eww.scss
+pkill eww
+eww daemon
+eww logs
+v eww.yuck
+v bar.yuck
+eww logs
+v bar.yuck
+v bar.yuck
+v scripts/get-workspaces.sh
+v bar.yuck
+v scripts/get-workspaces.sh
+v ../sxhkd/sxhkdrc
+v bar.scss
+lyrics
+lyrics
+reboot
+pkill obs
+pkill obs-studio
+btop
+btop
+reboot
+lyrics
+paru -Syu
+paru yazi
+paru -S fd ffmpegthumbnailer unarchiver jq
+yazi
+pkill picom
+yazi
+paru qimgv
+v .config/picom/picom.conf
+xprop
+yai
+yazi
+yazi
+yazi
+yazi
+yazi
+yazi
+mkdir .config/yazi
+mkdir .config/yazi/plugins
+yazi
+l
+v .config/yazi/yazi.toml
+v .config/yazi/theme.toml
+v .config/yazi/theme.toml
+v .config/yazi/theme.toml
+v .config/yazi/theme.toml
+v .config/yazi/theme.toml
+v .config/yazi/theme.toml
+v .config/yazi/theme.toml
+v .config/zsh/aliasrc
+v .config/zsh/.zshrc
+v .config/zsh/aliasrc
+zsh
+addalias 'duck' 'yazi'
+v .config/zsh/aliasrc
+zsh
+duck
+duck
+duck
+duck
+duck
+cd
+ls
+l
+clear
+addalias 'duck' 'yazi'
+v .config/zsh/aliasrc
+zsh
+v .config/bspwm/bspwmrc
+paru zotero
+gsettings set org.gnome.desktop.interface menus-have-icons true
+paru eza
+paru exa
+eza
+exa
+eza -l
+l
+lh
+la
+eza -la
+eza -lha
+eza -lha -M
+man eza
+eza -lhab
+man eza
+eza -lhaB --total-size
+paru -Q
+paru -Qq
+clear
+paru -Qq
+paru -Qe
+clear
+paru -Qe
+ll
+la
+v .config/zsh/aliasrc
+ll
+addalias 'll' 'eza -l'
+ll
+src
+zsh
+ll
+c downloads
+l
+ll
+c
+cd
+v .config/zsh/aliasrc
+zsh
+l
+ll
+c shared
+l
+ll
+ll -h
+c
+paru jvm
+paru java version
+paru arch java
+paru jdk
+archlinux-java
+archlinux-java get
+l
+paru publish or perish
+c thesheesh
+l
+git clone git clone git@github.com:pienapin/skripsheesh
+git clone git@github.com:pienapin/skripsheesh
+c skripsheesh
+lyrics
+doas mount /dev/sdb4 /mnt
+c /mnt
+doas umount -r /mnt
+l
+c home/pien/downloads
+l
+cp Proposal\ -\ 2007114460\ -\ NADIRA\ ALIFIA\ IONENDRI.pdf ~/downloads
+doas umount -r /mnt
+doas systemctl restart pipewire-pulse
+systemctl --user restart pipewire-pulse
+v .ssh/known_hosts
+v .ssh/config
+lyrics
+c thesheesh
+l
+c skripsheesh
+l
+git status
+l
+git status
+git add .
+git commit -m "bab 2 belum lengkap"
+git push origin main
+c ..
+l
+mv faceres-test skripsheesh/
+mv guest-log skripsheesh
+mv human skripsheesh
+l
+c skripsheesh
+l
+git status
+git add .
+git rm --cached guest-log
+l
+mv human ..
+l
+mv guest-log ..
+l
+git status
+git add .
+git commit -m "kode faceres test"
+git push origin main
+man bspc
+v .config/sxhkd/sxhkdrc
+bspc node -s next.local
+v .config/sxhkd/sxhkdrc
+v .config/sxhkd/sxhkdrc
+clear
+c nvim
+l
+v lua/options.lua
+v lua/options.lua
+v lua/list.lua
+v lua/list.lua
+v lua/list.lua
+v lua/list.lua
+v lua/list.lua
+v lua/list.lua
+c nvim
+l
+v after/plugin/bufferline.lua
+v lua/bind.lua
+v lua/bind.lua
+v lua/bind.lua
+v lua/bind.lua
+v init.lua
+rm -rf lua/bind.lua
+v init.lua
+v .
+v .
+paru discord
+paru telegram
+paru nekogram
+paru kotatogram
+paru nekox
+paru telegram
+paru ayugram
+paru calculator
+paru qalculate
+l
+c shared
+l
+c collegium
+l
+cc semester\ 6
+c semester\ 6
+l
+c Laporan\ KP
+l
+c thesheesh
+l
+c skripsheesh
+l
+git status
+l References
+l
+git status
+git add .
+l
+git status
+git commit
+git commit -m
+EDITOR=nvim git commit
+git push origin main
+usermod -G docker pien
+doas usermod -G docker pien
+id
+su - pien
+id
+c containa
+l
+c traefik
+l
+docker compose up -d
+c ..
+c portainer
+l
+docker compose up -d
+c ..
+l
+c mariadb-phpmyadmin
+l
+docker compose up -d
+l
+c koudd
+l
+c ..
+paru docker
+paru docker
+doas mount /dev/sdb4 /mnt
+l
+c /mnt
+l
+c home/pien
+l
+cp -r containa /home/pien
+l
+c
+doas umount -r /mnt
+c containa
+l
+c traefik
+l
+docker compose up -d
+systemctl --user enable --now docker
+doas systemctl enable --now docker
+docker compose up -d
+git status
+c skripsheesh
+l
+git status
+l
+git status
+git add .
+git commit -m "bab 2 dan bab 3"
+git push origin main
+git push origin main
+ping projecttest-syazliananuro.site
+c skripsheesh
+l
+git status
+git status
+git add .
+git commit -m "revisi 27 feb"
+git push origin main
+l
+c downloads
+l
+mv KPTI\ 30.pdf STI\ 30.pdf
+mv KPTI\ 31.pdf STI\ 31.pdf
+l
+ll
+ls
+duck
+duck
+reboot
+reboot
+reboot
+c nvim
+l
+v lua/list.lua
+v lua/list.lua
+v lua/list.lua
+v lua/list.lua
+clear
+memtake
+paru memtake
+duck
+c nvim
+l
+l lua
+v lua/keymaps.lua
+v lua/keymaps.lua
+v init.lua
+v init.lua
+v init.lua
+l
+c
+l
+l
+duck
+c zsh
+l
+v .zshrc
+duck
+zsh
+l
+c koudd
+l
+paru noto symbols
+paru noto
+paru noto
+doas
+paru noto
+l
+doas pacman -S noto-fonts
+dv /etc/hosts
+groups username
+groups pien
+groups
+su
+l
+groups
+paru noto
+paru -Sy
+paru noto
+paru noto
+duck
+c wezterm
+c .config/wezterm
+l
+v wezterm.lua
+paru memtake
+paru memory
+clear
+clear
+clear
+clear
+clear
+clear
+v .config/kitty
+v .config/kitty/kitty.conf
+cp /usr/share/doc/kitty/kitty.conf .config/kitty/
+v .config/kitty/kitty.conf
+v .config/sxhkd/sxhkdrc
+v .config/sxhkd/sxhkdrc
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+paru obs
+pkill obs
+pkill obs-studio
+systemctl --user restart pipewire-pulse
+reboot
+paru monocraft
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf 
+v .config/kitty/kitty.conf
+testcolor
+v .config/kitty/kitty.conf
+curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/e50a28ec54188d2413518788de6c6367ffcea4f7/print256colours.sh | bash
+addalias 'testcolor' 'curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/e50a28ec54188d2413518788de6c6367ffcea4f7/print256colours.sh | bash'
+testcolor
+zsh
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+l
+duck
+v .config/kitty/kitty.conf
+l
+duck
+l
+v .config/kitty/kitty.conf
+l
+l
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+cclear
+paru anytype
+l
+v .config/kitty/kitty.conf
+l
+v .config/kitty/kitty.conf
+clear
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+paru -Qe
+btop
+duck
+v .config/nvim/lua/keymaps.lua
+v .config/nvim/lua/keymaps.lua
+c downloads
+l
+unzip Dahliyusmanto-20240304T070349Z-001.zip
+paru -S unzip
+unzip Dahliyusmanto-20240304T070349Z-001.zip
+c Dahliyusmanto
+l
+c Publikasi\ \(Bukan\ Hasil\ Hibah\ Penelitian\)
+l
+rm -rf *
+c ..
+c ..
+mv Dahliyusmanto Nama_Dosen
+paru -S zip
+c downloads
+zip Nama_Dosen
+zip -h
+zip -r nama_dosen Nama_Dosen
+mv nama_dosen.zip Nama_Dosen
+c Nama_Dosen
+l
+rm -rf nama_dosen.zip
+touch HKI\ \(Bukan\ Hasil\ Penelitian-PkM\)/tmp
+touch Penelitian\ \(Laporan,\ HKI,\ Publikasi\)/tmp
+touch Pengabdian\ kepada\ Masyarakat\ \(Laporan,\ HKI,\ Publikasi\)/tmp
+touch PKM\ \(Laporan,\ HKI,\ Publikasi\)/tmp
+touch Publikasi\ \(Bukan\ Hasil\ Hibah\ Penelitian\)/tmp
+clear
+duck
+btop
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/nvim/lua/list.lua
+v .config/nvim/lua/list.lua
+v .config/nvim/lua/list.lua
+v .config/nvim/lua/list.lua
+v .config/kitty/kitty.conf
+v .config/nvim/lua/list.lua
+v .config/nvim/lua/list.lua
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+duck
+v .config/nvim/lua/list.lua
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/kitty/kitty.conf
+v .config/nvim/lua/list.lua
+c shared
+l
+c miscs
+l
+c backup
+l
+c os
+l
+l
+l
+mkdir fr
+rm -rf fr
+mkdir fd
+mount /dev/sdc1 fd
+doas mount /dev/sdc1 fd
+c fd
+l
+rm -rf archlinux-2024.01.01-x86_64.iso
+doas rm -rf archlinux-2024.01.01-x86_64.iso
+l
+paru -S make
+paru fzf
+v .config/nvim/lua/list.lua
+paru fd
+c nvim
+v after/plugin/lsp.lua
+v after/plugin/lsp.lua
+v after/plugin/lsp.lua
+v after/plugin/lsp.lua
+v after/plugin/lsp.lua
+v after/plugin/lsp.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+c kou
+l
+c skr
+l
+c th
+l
+c guest-log/
+l
+nvim.
+nvim .
+c nvim
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+v after/plugin/telescope.lua
+c
+l
+c dotfiles
+l
+c .
+mkdir dots
+c dots
+l
+c ..
+l
+rm -rf dotos
+rm -rf dots
+c ..
+mkdir dots
+mv .config/nvim dots/
+ln -h
+ln --help
+ln -s dots/nvim .config/nvim
+v dots/nvim/after/plugin/telescope.lua
+c .config/nvim
+c /
+l
+la
+c
+l
+la
+ll
+ll -a
+c .config
+ll -a
+c nvim
+cd nvim
+l nvim
+\:q
+unlink .config/nvim
+unlink nvim
+c ..
+l
+ln -s /home/pien/dots/nvim /home/pien/.config/nvim
+c .config/nvim
+l
+v after/plugin/telescope.lua
+c do
+l
+c ..
+c dots
+c ..
+c dots
+..
+c dots
+..
+c dots
+..
+c do
+l
+git init
+git branch -m main
+git status
+git config --global init.defaultBranch main
+lla
+c
+v .p10k.zsh
+cp -r /etc/paru.conf dots
+cat dots/paru
+cat dots/paru.conf
+v /etc/pacman.conf
+cp -r /etc/pacman.conf dots
+c do
+l
+mkdir etc
+mv pacman.conf etc
+mv paru.conf etc
+l
+c kitty
+l
+c con
+l
+c ki
+c kitty
+l
+v kitty.conf
+c dots
+l
+git commit -m "add: nvim config"
+git log
+git add .
+git commit -m "add: nvim config"
+git remote add origin git@github.com:pienapin/dots.git
+git push -u origin main
+c zsh
+l
+v .zshrc
+v aliasrc
+zsh
+c dots
+mkdir kitty
+v kitty/kitty.conf
+v kitty/kitty.conf
+v kitty/kitty.conf
+git add kitty
+git status
+git commit -m "add: kitty config"
+git add etc
+git commit -m "add: paru and pacman"
+git push origin main
+paru anynote
+paru anytype
+c nvim
+l
+v lua/list.lua
+v after/plugin/bufferline.lua 
+v after/plugin/bufferline.lua 
+v after/plugin/bufferline.lua 
+v after/plugin/bufferline.lua 
+paru peazip
+paru -S p7zip quad arc
+duck
+c dow
+l
+duck
+l
+duck
+unzip -v XSW10AIOWPE.U10
+duck
+unzip -v XSW10AIOWPE.U10.zip
+duck
+mv XSW10AIOWPE.U10.zip XSW10AIOWPE.U10
+paru 7zip
+paru 7zip
+doas mount /dev/sdb1 /mnt
+c /mnt
+l
+dv EFI/BOOT/refind.conf
+mount /dev/sdc1 fd
+doas mount /dev/sdc1 fd
+doas cp downloads/WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO fd
+c fd
+l
+doas umount /dev/sdc1
+c
+doas umount /dev/sdc1
+doas mount /dev/sdc1 fd
+rm -rf fd/WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO
+doas rm -rf fd/WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO
+doas cp downloads/gparted-live-1.6.0-1-amd64.iso fd
+umount /dev/sdc1
+doas umount /dev/sdc1
+doas mount /dev/sdc1 fd
+rm -rf fd/gparted-live-1.6.0-1-amd64.iso
+doas rm -rf fd/gparted-live-1.6.0-1-amd64.iso
+doas cp -v downloads/gparted-live-1.6.0-1-amd64.iso fd/
+cd fd
+l
+duck
+c
+doas umount /dev/sdc1
+pkill gparted
+doas pkill gparted
+c fd
+l
+c
+umount /dev/sdc1
+doas umount /fd
+doas umount fd
+doas mount /dev/sdc1 fd
+c fd
+l
+c
+doas mount /dev/sdc1 fd
+paru ventoy
+paru -S exfatprogs
+doas mount /dev/sdc1 /mnt
+doas cp -v downloads/gparted-live-1.6.0-1-amd64.iso /mnt
+doas umount /dev/sdc1
+md5sum downloads/gparted-live-1.6.0-1-amd64.iso
+doas mount /dev/sdc1 /fd
+doas mount /dev/sdc1 fd
+c fd
+l
+md5sum gparted-live-1.6.0-1-amd64.iso
+rm -rf gparted-live-1.6.0-1-amd64.iso
+doas rm -rf gparted-live-1.6.0-1-amd64.iso
+doas cp ../downloads/gparted-live-1.6.0-1-amd64.iso .
+md5sum gparted-live-1.6.0-1-amd64.iso
+l
+c
+doas mount /dev/sdc1 fd
+doas mount /dev/sdd1 fd
+l
+c fd
+l
+md5sum gparted-live-1.6.0-1-amd64.iso
+duck
+rm -rf gparted-live-1.6.0-1-amd64.iso
+doas rm -rf gparted-live-1.6.0-1-amd64.iso
+l
+c
+c fd
+doas cp ../downloads/gparted-live-1.6.0-1-amd64.iso .
+md5sum gparted-live-1.6.0-1-amd64.iso
+c
+umount /dev/sdc1
+umount /dev/sdd1
+doas /dev/sdd1
+doas umount /dev/sdd1
+doas mount /dev/sdd1 fd
+rm -rf fd/gparted-live-1.6.0-1-amd64.iso
+doas rm -rf fd/gparted-live-1.6.0-1-amd64.iso
+doas cp -v downloads/WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO fd/
+doas umount /dev/sdd1
+md5sum downloads/WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO
+md5sum downloads/XSW10AIOWPE.U10
+duck downloads
+c downloads
+lla
+du -h WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO
+ls -h 
+l -h WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO
+du -m WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO
+doas mount /dev/sdd1 fd
+c
+doas mount /dev/sdd1 fd
+c fd
+l
+rm -rf WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO
+doas rm -rf WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U10.X64.\(WPE+\).ISO
+doas cp -v ../shared/miscs/backup/os/WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U9.X64.\(WPE+\).ISO .
+rm -rf WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U9.X64.\(WPE+\).ISO
+doas rm -rf WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U9.X64.\(WPE+\).ISO
+l
+la
+rm -rf *
+c
+doas umount /dev/sdd1
+doas mount /dev/sdd1 fd
+c fd
+doas cp -v ../shared/miscs/backup/os/WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U9.X64.\(WPE+\).ISO .
+c
+doas umount /dev/sdd1
+md5sum shared/miscs/backup/os/WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U9.X64.\(WPE+\).ISO
+paru php version
+c containa
+l
+c mariadb-phpmyadmin
+l
+v docker-compose.yml
+php artisan migrate
+c inv
+l
+php artisan serve
+php artisan migrate
+php artisan migrate
+paru php mysql
+zsh
+c inv
+l
+php artisan migrate
+composer update
+dv /etc/php/php.ini
+dv /etc/php/php.ini
+docker -l
+docker container list
+paru composer
+mv downloads/inventaris-app\ \(2\).zip koudd
+c ko
+l
+unzip -v inventaris-app\ \(2\).zip
+l
+ll
+unzip inventaris-app\ \(2\).zip
+l
+c inventaris-app
+l
+nvim .
+c inv
+php artisan migrate
+php artisan migrate
+php artisan serve
+php artisan serve
+doas mount /dev/sdb1 /mnt
+dv /mnt/EFI/BOOT/refind.conf
+umount /mnt
+doas umount /mnt
+duck
+doas mount /dev/sdc1 fd
+c fd
+l
+rm -rf WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U9.X64.\(WPE+\).ISO
+doas rm -rf WIN10.PRO.AIO.SUPERLITE+SE+COMPACT.U9.X64.\(WPE+\).ISO
+doas cp -v ../downloads/archlinux-2024.03.01-x86_64.iso .
+l
+c
+umount fd
+doas 11
+doas umount /fd
+doas umount fd
+paru -Qe
+nvim .config/sxhkd/sxhkdrc
+nvim .config/sxhkd/sxhkdrc

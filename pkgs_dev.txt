@@ -1,0 +1,16 @@
+android-studio
+composer
+docker
+docker-compose
+jdk11-openjdk
+jdk17-openjdk
+nvm
+php
+python
+python-pip
+python-pipx
+podman
+cockpit-podman
+rustup
+rvm
+visual-studio-code-bin

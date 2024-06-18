@@ -1,0 +1,14 @@
+{
+    "bridges": [
+        {
+            "privileged": true,
+            "label": "polkit",
+            "spawn": [
+                "pkexec",
+                "--disable-internal-agent",
+                "cockpit-bridge",
+                "--privileged"
+            ]
+        }
+    ]
+}

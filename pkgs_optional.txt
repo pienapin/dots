@@ -1,0 +1,13 @@
+icu69-bin
+imagemagick
+lyrics-in-terminal
+mpv
+opencl-rusticl-mesa
+prismlauncher-qt5-bin
+qalculate-gtk
+sassc
+ventoy-bin
+windscribe-v2-bin
+youtube-music-bin
+zathura
+zathura-pdf-poppler

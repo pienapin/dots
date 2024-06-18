@@ -1,0 +1,12 @@
+font-manager
+apple-fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-extra
+otf-monocraft
+ttf-apple-emoji
+ttf-d2coding
+ttf-d2coding-nerd
+ttf-ms-fonts
+ttf-roboto
+ttf-roboto-mono-nerd

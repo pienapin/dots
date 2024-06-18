@@ -18,22 +18,14 @@ passwd
 useradd -mG wheel,video pien
 passwd pien
 
-cd /tmp
-git clone https://github.com/pienapin/dots.git
 pacman -S --needed - < dots/pkgs_build.txt
 
 pacman -S refind
 echo "Please enter EFI partition: (example: /dev/sda1 or /dev/nvme0n1p1)"
 read EFI
-refind-install --usedefault "$(EFI)"
+refind-install --usedefault "$EFI"
 mkrlconf
 tail -n 1 /boot/refind_linux.conf > /boot/refind_linux.conf
-
-git clone https://aur.archlinux.org/paru-bin.git
-cd paru
-makepkg -si
-cd ..
-rm -rf paru
 
 pacman -S opendoas
 cat <<EOF > /etc/doas.conf
@@ -41,21 +33,6 @@ permit persist setenv {PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin} :
 
 EOF
 
-pacman -S dash
-git clone https://aur.archlinux.org/dashbinsh.git
-cd dashbinsh
-makepkg -si
-cd ..
-rm -rf dashbinsh
-
-pacman -R sudo
-git clone https://aur.archlinux.org/doas-sudo-shim-minimal.git
-cd doas-sudo-shim-minimal
-makepkg -si
-cd ..
-rm -rf doas-sudo-shim-minimal
-
-cp -r dots/etc /etc
-cp -r dots/boot /boot
+cp -r /tmp/dots/boot /boot
 echo "check refind configuration and adjust it based on your system right now."
 echo "if done, you can reboot"
